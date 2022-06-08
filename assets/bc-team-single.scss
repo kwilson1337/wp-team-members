@@ -1,0 +1,125 @@
+//Banner
+.bc-plugin-single-team-member-banner {
+
+    &__content {
+        position: relative;
+        z-index: 1;
+        color: $white;
+        text-align: center;
+
+        p:empty {
+            display: none;
+        }
+
+        h1 {
+            margin-bottom: 0px;
+        }
+
+        p.h2 {
+            margin-bottom: 0px;
+            margin-top: 15px;
+        }
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.5);
+        z-index: 0;
+    }
+}
+
+//Team Member
+.bc-plugin-single-team-member {
+
+    &__content {
+
+    }
+
+    &__left {
+        
+        img {
+            margin-bottom: 20px;            
+        }
+
+        a {
+            display: block;
+
+            & + a {
+                margin-top: 3px;
+            }
+
+            &.-social {
+                display: inline-block;
+                
+                &+ .-social {
+                    margin-left: 5px;
+                }
+            }
+        }
+        @media only screen and (max-width: 768px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__right {
+
+        p {
+            &.-title {
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+        }        
+    }
+
+    &__desc {
+        margin-top: 20px;
+
+        p {
+
+            &:empty {
+                padding: 0px;
+                margin: 0px;
+                display: none;
+            }
+        }
+    }
+
+    &__tabs {
+        margin-top: 30px;
+        
+        .bc-nav-list {
+            a.nav-link {
+                padding: 8px 30px;
+                &.active {
+                    border-color: $color1;
+                    border-bottom: none;
+                    color: $color1;
+                }
+
+                @media only screen and (max-width: 560px) {
+                    width: 100%;
+                    text-align: center;
+                    border-color: #e9ecef #e9ecef #dee2e6;
+                    
+                    &.active {
+                        border-bottom: 1px solid $color1;
+                        z-index: 1;
+                    }
+                }
+            }
+        }
+
+        .bc-tab-content {
+            margin-top: 20px;
+
+            ul {
+                padding-left: 15px;
+                margin: 0px;
+            }
+        }
+    }
+}

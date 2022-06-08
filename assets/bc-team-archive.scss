@@ -1,0 +1,78 @@
+//Banner
+.bc-plugin-team-archive-banner { 
+
+    &__content {
+        position: relative;
+        z-index: 1;
+        color: $white;
+        text-align: center;
+
+        p:empty {
+            display: none;
+        }
+
+        h1 {
+            margin-bottom: 0px;
+        }
+
+        p.h2 {
+            margin-bottom: 0px;
+            margin-top: 15px;
+        }
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.5);
+        z-index: 0;
+    }
+}
+
+//Content
+.bc-plugin-team-archive {
+
+    &__header {
+        padding: 0px 0px 60px;
+        text-align: center;
+
+        @media only screen and (max-width: 768px) {
+            padding-bottom: 40px;
+        }
+
+        h1 {
+            margin: 0px;
+        }
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    &__inner {
+        text-align: center;
+
+        .img-container {
+            overflow: hidden;
+            border-radius: 5px;
+
+            img {
+                transition: 500ms ease-in-out all;
+            }
+        }
+        
+        h2 {
+            margin: 15px 0px;
+            color: $color1;
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.2);
+            }
+        }
+    }
+}

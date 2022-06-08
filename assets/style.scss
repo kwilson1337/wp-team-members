@@ -1,0 +1,19 @@
+// USABLE VARIABLES
+$color1: #5e50df;     
+$color2: #36c8ff;
+$color3: #6700cc;              
+$color4: #3c339b;              
+$color5: false;              
+$color6: false;              
+$color7: false;              
+$color8: false;              
+$color9: false;              
+$color10: false;              
+
+$white: #fff;
+$black: #000;
+
+@import 
+"./bc-team-archive.scss",
+"./bc-team-single.scss",
+"./bc-team-members-shortcode.scss";
