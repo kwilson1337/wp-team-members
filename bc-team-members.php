@@ -1,11 +1,10 @@
 <?php
 /**
- * Plugin Name:       BC Team Members
- * Plugin URI:        http://brandcoders.com/
+ * Plugin Name:       Team Members
+ * Plugin URI:        https://github.com/kwilson1337
  * Description:       Displays your team members with class.
  * Version:           1.0
- * Author:            BrandCoders
- * Text Domain:       bc-team-members
+ * Author:            Kyle Wilson 
  */
 defined('ABSPATH') or die('Naaaah');
 
